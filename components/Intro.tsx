@@ -41,7 +41,7 @@ const Intro = () => {
           </motion.span>
         </div>
       </div>
-      <motion.p
+      <motion.h1
         className="px-4 mt-4 mb-10 text-2xl font-medium text-center !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
@@ -52,7 +52,7 @@ const Intro = () => {
         building {""}
         <span className="italic">sites and apps.</span> My focus is {""}
         <span className="underline">React (Next.js)</span>
-      </motion.p>
+      </motion.h1>
 
       <motion.div
         className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
