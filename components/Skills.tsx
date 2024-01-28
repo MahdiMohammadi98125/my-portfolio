@@ -1,10 +1,8 @@
 "use client";
-import React from "react";
-import SectionHeading from "./SectionHeading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
-import { once } from "events";
+import SectionHeading from "./SectionHeading";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -15,7 +13,7 @@ const fadeInAnimationVariants = {
     opacity: 1,
     y: 0,
     transition: {
-      delay: 0.05 * index,
+      delay: 0.05 * index, // adding delay to each motion.li component
     },
   }),
 };
@@ -37,6 +35,7 @@ const Skills = () => {
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
+            viewport={{ once: true }}
             custom={index}
           >
             {skill}
