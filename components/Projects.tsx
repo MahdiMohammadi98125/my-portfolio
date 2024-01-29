@@ -5,7 +5,7 @@ import Project from "./Project";
 import SectionHeading from "./SectionHeading";
 
 const Projects = () => {
-  const { ref } = useSectionInView("Projects", 0.2);
+  const { ref } = useSectionInView("Projects", 0.1);
 
   return (
     <article className="scroll-mt-28 mb-28 " id="projects" ref={ref}>
