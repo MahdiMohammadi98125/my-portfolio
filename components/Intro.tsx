@@ -88,7 +88,7 @@ const Intro = () => {
         </Link>
         <a
           href="/CV.pdf"
-          className="flex items-center gap-2 py-3 transition bg-white border rounded-full outline-none cursor-pointer px-7 hover:scale-110 focus:scale-110 active:scale-105 group border-black/10"
+          className="flex items-center gap-2 py-3 transition bg-white border rounded-full outline-none cursor-pointer px-7 hover:scale-110 focus:scale-110 active:scale-105 group border-black/10 dark:bg-white/10"
           download={true}
         >
           Download CV{" "}
@@ -97,14 +97,14 @@ const Intro = () => {
         <a
           href="https://www.linkedin.com/in/mahdi-mohammadi-1b6395260/"
           target="_blank"
-          className="flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full text-[1.35rem]  transition   outline-none cursor-pointer  hover:scale-[1.15] focus:scale-[1.15] active:scale-105 group hover:text-gray-950 borderBlack"
+          className="flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full text-[1.35rem]  transition   outline-none cursor-pointer  hover:scale-[1.15] focus:scale-[1.15] active:scale-105 group hover:text-gray-950 borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <BsLinkedin />
         </a>
         <a
           href="https://github.com/MahdiMohammadi98125"
           target="_blank"
-          className="flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full text-[1.35rem] transition   outline-none cursor-pointer  hover:scale-[1.15] focus:scale-[1.15] active:scale-105 group hover:text-gray-950 borderBlack"
+          className="flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full text-[1.35rem] transition   outline-none cursor-pointer  hover:scale-[1.15] focus:scale-[1.15] active:scale-105 group hover:text-gray-950 borderBlack dark:bg-white/10 dark:text-white/60"
         >
           <FaGithubSquare />
         </a>

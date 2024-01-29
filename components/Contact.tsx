@@ -23,7 +23,7 @@ const Contact = () => {
       viewport={{ once: true }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="-mt-6 text-gray-700">
+      <p className="-mt-6 text-gray-700 dark:text-white/80">
         Please contact me directly at{" "}
         <a href="mailto:mahdi202201.mohammadi@gmai.com" className="underline">
           mahdi202201.mohammadi@gmail.com
@@ -33,7 +33,7 @@ const Contact = () => {
       </p>
 
       <form
-        className="flex flex-col mt-10"
+        className="flex flex-col mt-10 dark:text-black"
         action={async (FormData) => {
           const { data, error } = await sendEmail(FormData);
           if (error) {

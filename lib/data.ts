@@ -102,7 +102,7 @@ export const projectsData = [
   {
     title: "pig-game",
     description:
-      "Pig Game is a simple and fun dice game that is often played as a party game or a family activity. It is also known by various names such as Pig Dice, Pass the Pigs, or Jeopardy Dice. The game requires only a pair of dice and can be played by any number of players.",
+      "Pig Game is a simple and fun dice game that is often played as a party game or a family activity. It is also known by various names such as Pig Dice, Pass the Pigs, or Jeopardy Dice. ",
     tags: ["React", "CSS"],
     imageUrl: pigGame,
   },
