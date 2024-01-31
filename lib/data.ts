@@ -1,7 +1,3 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
 import bankist from "@/public/project-screenshots/bankist-website.png";
 import eatN from "@/public/project-screenshots/eat-n-split.png";
 import expenseTracker from "@/public/project-screenshots/expense-tracker.png";
@@ -15,6 +11,9 @@ import omniFood from "@/public/project-screenshots/omni-food.png";
 import onlineService from "@/public/project-screenshots/online-service.jpg";
 import pigGame from "@/public/project-screenshots/pig-game.png";
 import trillo from "@/public/project-screenshots/trillo.jpg";
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact } from "react-icons/fa";
 
 export const links = [
   {
@@ -55,7 +54,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "Herat, Af",
     description:
-      "I am learning Node.js. Node.js is an open-source, cross-platform JavaScript runtime environment that allows developers to run JavaScript code outside of a web browser. ",
+      "developed 20+ frontend mini projects.my experience with these 20+ frontend mini projects demonstrates my hands-on proficiency, adaptability to various challenges, and my passion for creating seamless and engaging user interfaces.",
     icon: React.createElement(FaReact),
     date: "2024 - present",
   },
@@ -68,6 +67,7 @@ export const projectsData = [
       "track project issues with a dynamic web app powered by Next.js, MongoDB, and Prisma for seamless performance and robust database integration.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
     imageUrl: issueTracker,
+    url: "https://issue-tracker-seven-black.vercel.app/",
   },
   {
     title: "game-hub",
@@ -75,13 +75,7 @@ export const projectsData = [
       "Explore a diverse gaming universe in the ultimate Game Hub, a centralized platform catering to all your gaming interests and experiences.",
     tags: ["React", "TypeScript", "Tailwind", "zod"],
     imageUrl: gameHub,
-  },
-  {
-    title: "Mapty",
-    description:
-      "A public web app that users can measure their distance while running or cycling.",
-    tags: ["Html", "Css", "JavaScript"],
-    imageUrl: mapty,
+    url: "https://game-hub-tau-gules.vercel.app/",
   },
   {
     title: "Online-service",
@@ -89,13 +83,7 @@ export const projectsData = [
       "Elevate your online experience with our comprehensive online-service website, offering a seamless platform for diverse digital solutions at your fingertips.",
     tags: ["React", "Tailwind"],
     imageUrl: onlineService,
-  },
-  {
-    title: "bankist-website",
-    description:
-      "Discover financial empowerment with Bankist's landing page, where sleek design meets user-friendly interfaces, creating a seamless gateway to modern banking solutions.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: bankist,
+    url: "https://online-service-42520e.netlify.app",
   },
   {
     title: "expense-tracker",
@@ -103,13 +91,7 @@ export const projectsData = [
       "Take control of your finances effortlessly with our Expense Tracker app, providing a user-friendly interface for managing and analyzing your expenditures on the go.",
     tags: ["React", "CSS Module"],
     imageUrl: expenseTracker,
-  },
-  {
-    title: "pig-game",
-    description:
-      "Pig Game is a simple and fun dice game that is often played as a party game or a family activity. It is also known by various names such as Pig Dice, Pass the Pigs, or Jeopardy Dice. ",
-    tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: pigGame,
+    url: "https://expense-tracker-app-f390.netlify.app/",
   },
   {
     title: "eat-n-split",
@@ -117,6 +99,42 @@ export const projectsData = [
       "a web application that you can split your bill when you are in the resturant.",
     tags: ["React", "CSS"],
     imageUrl: eatN,
+    url: "https://eat-n-split-40b333.netlify.app/",
+  },
+  {
+    title: "Mapty",
+    description:
+      "A public web app that users can measure their distance while running or cycling.",
+    tags: ["Html", "Css", "JavaScript"],
+    imageUrl: mapty,
+    url: "https://mapty-seven-pi.vercel.app",
+  },
+
+  {
+    title: "bankist-website",
+    description:
+      "Discover financial empowerment with Bankist's landing page, where sleek design meets user-friendly interfaces, creating a seamless gateway to modern banking solutions.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: bankist,
+    url: "https://bankist-website-4cc7be.netlify.app",
+  },
+
+  {
+    title: "pig-game",
+    description:
+      "Pig Game is a simple and fun dice game that is often played as a party game or a family activity. It is also known by various names such as Pig Dice, Pass the Pigs, or Jeopardy Dice. ",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: pigGame,
+    url: "https://pig-game-435c45.netlify.app",
+  },
+
+  {
+    title: "Guess the number",
+    description:
+      "Engage in a thrilling guessing game on our HTML, CSS, and JS powered website. ",
+    tags: ["HTML", "CSS", "JavaScript"],
+    imageUrl: guess,
+    url: "https://guess-number-8b1de8.netlify.app",
   },
   {
     title: "grocery",
@@ -124,13 +142,7 @@ export const projectsData = [
       "Experience seamless grocery shopping with our HTML and CSS crafted website. ",
     tags: ["HTML", "CSS"],
     imageUrl: grocery,
-  },
-  {
-    title: "Guess the number",
-    description:
-      "Engage in a thrilling guessing game on our HTML, CSS, and JS powered website. ",
-    tags: ["HTML", "CSS", "JavaScript"],
-    imageUrl: guess,
+    url: "https://grocery-website-amber.vercel.app/",
   },
   {
     title: "Nexter",
@@ -138,6 +150,7 @@ export const projectsData = [
       "Discover the epitome of real estate elegance on our Nexter landing page. Crafted with HTML and CSS.",
     tags: ["HTML", "CSS"],
     imageUrl: nexter,
+    url: "https://nexter-project-5dfc1e.netlify.app",
   },
   {
     title: "Trillo",
@@ -145,6 +158,7 @@ export const projectsData = [
       "Embark on seamless travel planning with our Trillo landing page, meticulously crafted in HTML and CSS. ",
     tags: ["HTML", "CSS"],
     imageUrl: trillo,
+    url: "https://trillo-project-d13a90.netlify.app",
   },
   {
     title: "Omni-food",
@@ -152,6 +166,7 @@ export const projectsData = [
       "Indulge your senses on the Omni-Food restaurant landing page, a culinary haven brought to life through HTML and CSS. ",
     tags: ["HTML", "CSS"],
     imageUrl: omniFood,
+    url: "https://omnifood-mahdi98125.netlify.app/",
   },
 ] as const;
 
@@ -159,16 +174,15 @@ export const skillsData = [
   "HTML",
   "CSS",
   "Scss",
+  "Tailwind",
   "Bootstrap",
-  "Radix-ui",
   "Chakra-ui",
   "JavaScript",
   "TypeScript",
   "React",
   "Next.js",
-  "Git",
-
-  "Tailwind",
   "Prisma",
   "MongoDB",
+  "Github",
+  "Git",
 ] as const;
