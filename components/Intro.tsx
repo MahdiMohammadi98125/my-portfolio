@@ -95,7 +95,7 @@ const Intro = () => {
           <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
         </a>
         <a
-          href="https://www.linkedin.com/in/mahdi-mohammadi-1b6395260/"
+          href="https://www.linkedin.com/in/mahdi-mohammadi1/"
           target="_blank"
           className="flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full text-[1.35rem]  transition   outline-none cursor-pointer  hover:scale-[1.15] focus:scale-[1.15] active:scale-105 group hover:text-gray-950 borderBlack dark:bg-white/10 dark:text-white/60"
         >
