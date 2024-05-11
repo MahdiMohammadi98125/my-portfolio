@@ -11,6 +11,7 @@ import omniFood from "@/public/project-screenshots/omni-food.png";
 import onlineService from "@/public/project-screenshots/online-service.jpg";
 import pigGame from "@/public/project-screenshots/pig-game.png";
 import trillo from "@/public/project-screenshots/trillo.jpg";
+import eshop from "@/public/project-screenshots/eshop.png";
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
@@ -61,6 +62,22 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "E-shop",
+    description:
+      "E-Shop is a dynamic web app built with React, Next.js, Tailwind CSS, Prisma, MongoDB, and Stripe. It offers a seamless shopping experience with fast loading times, modern UI, efficient data management, and secure payment processing. This project exemplifies the integration of cutting-edge technologies for an optimized e-commerce platform",
+    tags: [
+      "React",
+      "Next.js",
+      "MongoDB",
+      "Tailwind",
+      "Prisma",
+      "Stripe",
+      "MUI",
+    ],
+    imageUrl: eshop,
+    url: "https://mahdi-e-shop.vercel.app",
+  },
   {
     title: "issue-tracker",
     description:
