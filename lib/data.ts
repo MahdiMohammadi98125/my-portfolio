@@ -44,19 +44,19 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Front-End Developer",
+    title: "Front-end developer",
     location: "Jeyhun tech",
-    description: "I worked as a front-end developer for 2 years ",
+    description: "I worked as a front-end developer for 1 year",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2024",
+    date: "2022 - 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Herat, Af",
+    title: "Front-end developer",
+    location: "Farse route",
     description:
-      "developed 20+ frontend mini projects.my experience with these 20+ frontend mini projects demonstrates my hands-on proficiency, adaptability to various challenges, and my passion for creating seamless and engaging user interfaces.",
+      "I contributed as a Frontend Developer at Farse Route, where I refined my abilities in designing intuitive and visually compelling user interfaces.",
     icon: React.createElement(FaReact),
-    date: "2024 - present",
+    date: "2023-2024",
   },
 ] as const;
 
