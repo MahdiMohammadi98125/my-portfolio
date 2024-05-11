@@ -65,7 +65,7 @@ export const projectsData = [
   {
     title: "E-shop",
     description:
-      "E-Shop is a dynamic web app built with React, Next.js, Tailwind CSS, Prisma, MongoDB, and Stripe. It offers a seamless shopping experience with fast loading times, modern UI, efficient data management, and secure payment processing. This project exemplifies the integration of cutting-edge technologies for an optimized e-commerce platform",
+      "E-Shop is a sleek web app using React, Next.js, Tailwind CSS, Prisma, MongoDB, and Stripe. It ensures fast, secure shopping with modern UI, efficient data management, and seamless payment processing.",
     tags: [
       "React",
       "Next.js",
