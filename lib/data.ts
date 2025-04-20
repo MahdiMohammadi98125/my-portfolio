@@ -52,17 +52,18 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Front-end developer",
-    location: "Jeyhun tech",
-    description: "I worked as a front-end developer for 1 year",
+    title: "Front-end web developer",
+    location: "Mars Coders",
+    description:
+      "Developed and maintained scalable React and Next.js applications",
     icon: React.createElement(CgWorkAlt),
-    date: "2022 - 2023",
+    date: "2024 - 2025",
   },
   {
     title: "Front-end developer",
-    location: "Farse route",
+    location: "Jeyhun Tech",
     description:
-      "I contributed as a Frontend Developer at Farse Route, where I refined my abilities in designing intuitive and visually compelling user interfaces.",
+      "I contributed as a Frontend Developer at Jeyhun Tech, where I refined my abilities in designing intuitive and visually compelling user interfaces.",
     icon: React.createElement(FaReact),
     date: "2023-2024",
   },
