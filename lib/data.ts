@@ -65,7 +65,7 @@ export const experiencesData = [
     description:
       "I contributed as a Frontend Developer at Jeyhun Tech, where I refined my abilities in designing intuitive and visually compelling user interfaces.",
     icon: React.createElement(FaReact),
-    date: "2022-2024",
+    date: "2023-2024",
   },
 ] as const;
 

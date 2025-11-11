@@ -1,10 +1,18 @@
 "use server";
-import ContactFormEmail from "@/email/ContactFormEmail";
 import { getErrorMessage, validateString } from "@/lib/utils";
-import React from "react";
-import { Resend } from "resend";
+import * as nodemailer from "nodemailer";
+import { getEmailTemplate } from "@/email/emailTemplate";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Create transporter - configure with your email service
+const transporter = nodemailer.createTransport({
+  host: process.env.SMTP_HOST || "smtp.gmail.com",
+  port: parseInt(process.env.SMTP_PORT || "587"),
+  secure: process.env.SMTP_SECURE === "true", // true for 465, false for other ports
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASSWORD, // Use App Password for Gmail
+  },
+});
 
 export const sendEmail = async (formData: FormData) => {
   const message = formData.get("message");
@@ -21,17 +29,27 @@ export const sendEmail = async (formData: FormData) => {
       error: "Invalid sender email",
     };
   }
+
+  // Validate SMTP configuration
+  if (!process.env.SMTP_USER || !process.env.SMTP_PASSWORD) {
+    return {
+      error:
+        "Email service not configured. Please set SMTP_USER and SMTP_PASSWORD environment variables.",
+    };
+  }
+
+  const recipientEmail =
+    process.env.CONTACT_EMAIL || "mahdimohammadi.webdev@gmail.com";
+
   let data;
   try {
-    data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
-      to: "mahdi202201.mohammadi@gmail.com",
-      subject: "Message from contact form",
-      reply_to: senderEmail as string,
-      react: React.createElement(ContactFormEmail, {
-        message: message as string,
-        senderEmail: senderEmail as string,
-      }),
+    data = await transporter.sendMail({
+      from: `Portfolio Contact Form <${process.env.SMTP_USER}>`,
+      to: recipientEmail,
+      replyTo: senderEmail as string,
+      subject: "New Message from Portfolio Contact Form",
+      html: getEmailTemplate(message as string, senderEmail as string),
+      text: `You received a new message from your portfolio contact form.\n\nFrom: ${senderEmail}\n\nMessage:\n${message}`,
     });
   } catch (error: unknown) {
     return {
