@@ -20,7 +20,7 @@ const About = () => {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I'am Mahdi Mohammadi. A junior{" "}
+        I'am Mahdi Mohammadi. A 
         <span className="font-medium">Frontend developer</span>, passionate in
         learning tech{" "}
         <span className="font-medium">
